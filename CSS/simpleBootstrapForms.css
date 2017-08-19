@@ -1,0 +1,27 @@
+h1, h2, h3 {
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.formBody {
+    padding: 5px;
+    width: 600px;
+    background-color: rgba(192, 196, 195, 0.4);
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+.formBody input {
+    /*margin: 5px 0 5px 0;*/
+    /*display: inline-block;*/
+}
+/*input {*/
+    /*width: 75% !important;*/
+    /*text-align: center !important;*/
+/*}*/
