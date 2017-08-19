@@ -22,6 +22,6 @@
 
 })();
 
-//Generally used to abstract functionality that you'll be using across multiple controllers. if you want to call
+//Generally used to abstract functionality that you'll be using across multiple controllers (API calls, for example). if you want to call
 //a function from this factory, you would inject it into a controller and then invoke is as NAME_OF_FACTORY.nameOfFactoryFunction()
 
