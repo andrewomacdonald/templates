@@ -1,0 +1,87 @@
+.centeringBody {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*A keyframe animation for fading a div in for X amount of seconds.*/
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.divYouWantToFadeIn {
+    -moz-animation: fadeIn 5s infinite;
+    -webkit-animation: fadeIn 5s infinite;
+    -ms-animation: fadeIn 5s infinite;
+    animation: fadeIn 5s infinite;
+}
+
+.reverseFade {
+    -moz-animation: fadeIn 5s reverse infinite;
+    -webkit-animation: fadeIn 5s reverse infinite;
+    -ms-animation: fadeIn 3s reverse infinite;
+    animation: fadeIn 3s reverse infinite;
+}
+
+.alternateFade {
+    -moz-animation: fadeIn 5s alternate infinite;
+    -webkit-animation: fadeIn 5s alternate infinite;
+    -ms-animation: fadeIn 5s alternate infinite;
+    animation: fadeIn 5s alternate infinite;
+}
+
+
+
+h3 {
+    text-align: center;
+}
+
+.hello {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background: black;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+    color: white;
+}
+
