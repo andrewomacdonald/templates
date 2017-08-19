@@ -4,6 +4,20 @@
     margin: 0 auto;
 }
 
+.hello {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: center;
+}
+
 /*A keyframe animation for fading a div in for X amount of seconds.*/
 
 @-moz-keyframes fadeIn {
@@ -46,6 +60,8 @@
     }
 }
 
+
+/*This will start at the beginning of the keyframe and end at the end*/
 .divYouWantToFadeIn {
     -moz-animation: fadeIn 5s infinite;
     -webkit-animation: fadeIn 5s infinite;
@@ -53,6 +69,7 @@
     animation: fadeIn 5s infinite;
 }
 
+/*This will start at the end of the keyframe and end at the start*/
 .reverseFade {
     -moz-animation: fadeIn 5s reverse infinite;
     -webkit-animation: fadeIn 5s reverse infinite;
@@ -60,6 +77,7 @@
     animation: fadeIn 3s reverse infinite;
 }
 
+/*This will alternate between the beginning of the keyframe to the end, and vice versa*/
 .alternateFade {
     -moz-animation: fadeIn 5s alternate infinite;
     -webkit-animation: fadeIn 5s alternate infinite;
@@ -69,19 +87,50 @@
 
 
 
-h3 {
-    text-align: center;
+/*A keyframe animation for making a div spin*/
+@-moz-keyframes spinnyTime {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
 }
 
-.hello {
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-    background: black;
-    text-align: center;
-    display: inline-block;
-    margin: 20px;
-    vertical-align: top;
-    color: white;
+@-webkit-keyframes spinnyTime {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
+
+@-ms-keyframes spinnyTime {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@keyframes spinnyTime {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.divYouWantToSpin {
+    -moz-animation: spinnyTime 5s alternate infinite;
+    -webkit-animation: spinnyTime 5s alternate infinite;
+    -ms-animation: spinnyTime 5s alternate infinite;
+    animation: spinnyTime 5s alternate infinite;
+}
+
+
+
 
