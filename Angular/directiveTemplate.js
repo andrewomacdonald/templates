@@ -18,12 +18,17 @@
             },
             template: //HTML TEMPLATE GOES HERE (NOT NEEDED IF YOU WANT TO USE TEMPLATEURL,
             teamplateUrl: 'filePath/leadingTo/template.html',
-            link: link
+            link: link,
+            compile: compile
         }
         return directive;
 
         function link (scope, element, attrs) {
-        //    LINK FUNCTIONALITY GOES HERE, USUALLY USED TO MANIPULATE DOM
+        //    LINK FUNCTIONALITY GOES HERE
+        }
+
+        function compile(scope, element, attrs) {
+        //    COMPILE FUNCTIONALITY GOES HERE
         }
     }
 })();
