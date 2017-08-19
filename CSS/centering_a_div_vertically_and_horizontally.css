@@ -1,6 +1,50 @@
 /*CENTERING A DIV VERTICALLY AND HORIZONTALLY INSIDE ANOTHER DIV*/
 
+/*Horizontally Centered Div using the good ol' fashioned margin: 0 auto*/
+.greyDiv {
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    opacity: 0.2;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+
+/*NOTE: The vertical-align: top property is needed in the greyDiv because the default vertical align
+for inline-block elements is 'baseline', which means that any text entered into the div becomes
+that div's baseline.*/
+
+.centeringBody {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*NOTE: there are a few requirements for the above margin: 0 auto to work:*/
+/*a) The element must be block level, as in display: block, or display: table*/
+/*b) The element cannot float*/
+/*c) The element cannot have fixed or absolute position*/
+/*d) Element cannot have a width of auto*/
+
+/*OTHER NOTE: The text-align: center property horizontally aligns the inline-block divs AND the text
+inside of them! WOWZERS!*/
+
+
+/*Horizontally AND vertically centering a with the magic of flexbox*/
 .divYouWantCentered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+/*if you want to only HORIZONTALLY center the div, simply remove the height property*/
+
+.horizontallyCenteredDiv {
     display: flex;
     align-items: center;
     justify-content: center;
