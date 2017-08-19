@@ -1,0 +1,10 @@
+/*CENTERING A DIV VERTICALLY AND HORIZONTALLY INSIDE ANOTHER DIV*/
+
+.divYouWantCentered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*SOME DAY I WILL JUST REMEMBER THIS, BUT THAT DAY IS NOT NOW.*/
