@@ -16,6 +16,10 @@ body {
     border-radius: 5px;
 }
 
+.formBody input {
+    margin: 5px 0 5px 0;
+}
+
 
 @media screen and (max-width: 600px) {
     .formBody {
