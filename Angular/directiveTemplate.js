@@ -21,7 +21,7 @@
             teamplateUrl: 'filePath/leadingTo/template.html',
             link: link,
             compile: compile
-        }
+        };
         return directive;
 
         function link (scope, element, attrs) {
