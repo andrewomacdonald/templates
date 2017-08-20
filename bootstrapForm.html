@@ -13,31 +13,33 @@
     <body>
         <H1>A NICELY FORMATTED BOOTSTRAP FORM!</H1>
         <div class="formBody">
-            <form class="form-horizontal">
+            <form class="form-horizontal myForm">
                 <div class="form-group">
                     <div class="col-md-6">
-                        <input type="text" placeholder="First Name" class="form-control"></input>
+                        <input type="text" id="name" placeholder="First Name" class="form-control" required></input>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" placeholder="Last Name" class="form-control"></input>
+                        <input type="text" id="lastName" placeholder="Last Name" class="form-control" required></input>
                     </div>
                     <div class="col-md-8">
-                        <input type="text" placeholder="Street Address" class="form-control"></input>
+                        <input type="text" id="streetAddress" placeholder="Street Address" class="form-control" required></input>
                     </div>
                     <div class="col-md-4">
-                        <input type="text" placeholder="Building/Apt # (optional)" class="form-control"></input>
+                        <input type="text" id="buildingNumber" placeholder="Building/Apt # (optional)" class="form-control"></input>
                     </div>
                     <div class="col-md-12">
-                        <input type="email" placeholder="Email" class="form-control"></input>
-                        <input type="password" placeholder="Password" class="form-control"></input>
-                        <input type="password" placeholder="Confirm password" class="form-control"></input>
+                        <input type="email" id="email" placeholder="Email" class="form-control" required></input>
+                        <input type="password" placeholder="Password" class="form-control" required></input>
+                        <input type="password" placeholder="Confirm password" class="form-control" required></input>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" id="submitButton" class="btn btn-success">Submit</button>
+                <p>Click the Submit button to see an alert with all the fields except password. FUN.</p>
             </form>
         </div>
 
         <!--SCRIPT TAGS FOR CDNS (JQUERY, ANGULAR, BOOTSTRAP, ETC) AND CUSTOME SCRIPTS GO HERE!-->
         <!--<script src="FILE PATH TO SCRIPT OR LINK TO CDN HERE"></script>-->
+        <script src="JavaScript/idLogger.js"></script>
     </body>
 </html>
